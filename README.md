@@ -1,7 +1,7 @@
 ## Project: Bayesian Analysis and Modeling
 
 ### Overview
-Estimated parameters for curve fitting a simulated dose response curve, estimated trend in precipitation data with regression, and estimated means of grouped data with hierarchical model using PyMC for Bayesian probabilistic programming. Sampled posterior distributions to plot uncertainty of estimates and/or checked priors.
+Estimated parameters for curve fitting a simulated dose response curve and estimated trend in precipitation data with regression using PyMC for Bayesian probabilistic programming. Sampled posterior distributions to plot uncertainty of estimates and/or checked priors.
 
 ### Some Details
 These notebooks explore various Bayesian statistical methods using pyMC. 
@@ -14,11 +14,6 @@ In *pymc_ec50.ipynb*...
 
 >I fit a logistic curve to simulated data. The data represent hypothetical drug treatment doses and the percent response induced by each dose in a so called 'dose response' curve. I fit the logistic curve via scipy's 'curvefit' as well as with pyMC. For the parameters fit with pyMC, I sample from the posterior distributions to visualize the uncertainty in the parameter estimates.
 
-In *bayesian_hierarchical_gamma_model.ipynb*...
-
->I use a hierarchical model to estimate the means of gamma distributed data. I first generate samples of data from gamma distributions with known parameters. Then, I define a hierarchical gamma model in pyMC and use it to estimate the parameters of the gamma distributions from the data samples. Although hierarchical models can provide nice regularization of parameter estimates when used on messy, real world data, this academic exercise fell short in exemplifying that characteristic.
-
-
 ### Language
 Python
 
@@ -26,7 +21,7 @@ Python
 numpy, matplotlib, pymc, scipy
 
 ### Models
-Linear Regression, Logistic Regression, hierarchical gamma
+Linear Regression, Logistic Regression
 
 ### Resources
 [PyMC documentation](https://www.pymc.io/projects/docs/en/latest/learn.html)
